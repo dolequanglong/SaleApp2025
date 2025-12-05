@@ -1,0 +1,27 @@
+{%extends 'layout/base.html'%}
+{%block content%}
+<body>
+{%if pages>1%}
+<ul class="pagination">
+    {%for i in range(1, pages+1)%}
+    <li class="page-item"><a class="page-link" href="/?page={{i}}">{{i}}</a></li>
+    {%endfor%}
+</ul>
+{%endif%}
+<div class="row">
+    {%for p in prods%}
+    <div class="col-md-3 col-12" style="padding: 0.7rem">
+        <div class="card">
+            <img class="card-img-top" src="{{p.image}}" alt="{{p.name}}">
+            <div class="card-body">
+                <h6 class="card-title">{{p.name}}</h6>
+                <p class="card-text text-danger fw-bold">{{ "{:,.0f}".format(p.price) }} VNĐ</p>
+                <a href="/products/{{p.id}}" class="btn btn-primary">Xem chi tiết</a>
+                <a href="#" class="btn btn-danger">Đặt hàng</a>
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+</div>
+</body>
+{%endblock%}

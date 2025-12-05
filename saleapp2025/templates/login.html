@@ -1,0 +1,45 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+<h2 class="text-center fw-bold mb-4" style="color: #333;">ĐĂNG NHẬP</h2>
+<form method="post">
+    <div class="mb-3">
+        <input type="text" class="form-control" id="username" name="username" placeholder="Tài khoản" required>
+    </div>
+    <div class="mb-3">
+        <div class="input-group">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Mật khẩu"
+                   style="border-right: 0;" required>
+            <!--            <span class="input-group-text bg-white" style="border-left: 0; cursor: pointer;">-->
+            <!--                        <i class="fa-solid fa-eye-slash text-muted" id="togglePassword"></i>-->
+            <!--                    </span>-->
+        </div>
+    </div>
+    {%if err_msg%}
+    <div class="alert alert-danger">{{err_msg}}</div>
+    {%endif%}
+    <div class="text-end mb-3">
+        <a href="#" class="text-decoration-none" style="color: #3b82f6; font-size: 0.9rem;">Quên mật khẩu?</a>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100 py-2 mb-3 fw-bold"
+            style="background-color: #0d6efd;">Đăng nhập
+    </button>
+
+    <div class="text-center mb-3" style="font-size: 0.9rem;">
+        <span class="text-muted">Chưa có tài khoàn?</span>
+        <a href="/register" class="text-decoration-none" style="color: #3b82f6;">Đăng ký ngay</a>
+    </div>
+
+    <!--            <div class="divider">Or</div>-->
+
+    <!--            <button type="button" class="btn btn-primary w-100 mb-2 btn-social"-->
+    <!--                    style="background-color: #3b5998; border: none;">-->
+    <!--                <i class="fa-brands fa-facebook-f"></i> Login with Facebook-->
+    <!--            </button>-->
+
+    <!--            <button type="button" class="btn btn-light w-100 btn-social" style="border: 1px solid #ced4da;">-->
+    <!--                <i class="fa-brands fa-google text-danger"></i> Login with Google-->
+    <!--            </button>-->
+</form>
+{% endblock %}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 101,
+    "name": "ASUS TUF Gaming F16",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_7_36.png",
+    "price": 21290000,
+    "cate_id": 1
+  },
+  {
+    "id": 102,
+    "name": "ASUS VivoBook Go 14",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_-_2023-06-08t005130.908.png",
+    "price": 22990000,
+    "cate_id": 1
+  },
+  {
+    "id": 103,
+    "name": "Lenovo LOQ",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_7_10.png",
+    "price": 19990000,
+    "cate_id": 1
+  },
+  {
+    "id": 104,
+    "name": "Lenovo IdeaPad Slim 3",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/r/group_659_1__8.png",
+    "price": 14990000,
+    "cate_id": 1
+  },
+  {
+    "id": 201,
+    "name": "Iphone 16 Pro Max",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png",
+    "price": 29890000,
+    "cate_id": 2
+  },
+  {
+    "id": 202,
+    "name": "Iphone 17 Pro",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-256-gb.png",
+    "price": 33990000,
+    "cate_id": 2
+  },
+  {
+    "id": 203,
+    "name": "Oppo Find X9",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/9/x9.jpg",
+    "price": 22990000,
+    "cate_id": 2
+  },
+  {
+    "id": 204,
+    "name": "Sumsung Galaxy S24 Plus",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-s24-plus-tim.png",
+    "price": 15490000,
+    "cate_id": 2
+  },
+  {
+    "id": 301,
+    "name": "Xiaomi Pad Mini",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/i/xiaomi-pad-mini.jpg",
+    "price": 12690000,
+    "cate_id": 3
+  },
+  {
+    "id": 302,
+    "name": "Samsung Galaxy Tab A9+",
+    "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-tab-a9-plus_1.png",
+    "price": 3390000,
+    "cate_id": 3
+  }
+]

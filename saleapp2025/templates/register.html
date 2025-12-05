@@ -1,0 +1,37 @@
+{% extends 'layout/base.html' %}
+
+{% block content %}
+<h2 class="text-center fw-bold mb-4" style="color: #333;">ĐĂNG KÝ</h2>
+<form method="post" action="/register" enctype="multipart/form-data">
+    <div class="mb-3">
+        <input type="text" class="form-control" id="name" name="name"
+               placeholder="Họ và tên" required>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" id="username" name="username"
+               placeholder="Tên đăng nhập hoặc Email" required>
+    </div>
+    <div class="mb-3">
+        <input type="password" class="form-control" id="password" name="password"
+               pattern=".{8,}" placeholder="Mật khẩu" required>
+    </div>
+    <div class="mb-3">
+        <input type="password" class="form-control" id="confirm_password" name="confirm_password"
+               placeholder="Nhập lại mật khẩu" required>
+    </div>
+    <div class="mb-3">
+        <input type="file" class="form-control" id="avatar" name="avatar"
+               placeholder="Ảnh đại diện" required>
+    </div>
+    {% if err_msg %}
+    <div class="alert alert-danger">{{ err_msg }}</div>
+    {% endif %}
+    <button type="submit" class="btn btn-primary w-100 py-2 mb-3 fw-bold"
+            style="background-color: #0d6efd;">Đăng Ký
+    </button>
+    <div class="text-center mb-3" style="font-size: 0.9rem;">
+        <span class="text-muted">Đã có tài khoản?</span>
+        <a href="/login" class="text-decoration-none" style="color: #3b82f6;">Đăng nhập ngay</a>
+    </div>
+</form>
+{% endblock %}

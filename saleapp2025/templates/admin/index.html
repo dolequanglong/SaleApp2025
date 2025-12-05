@@ -1,0 +1,53 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+<h1 class="text-center">TRANG QUẢN TRỊ</h1>
+{%if current_user.is_authenticated%}
+<img src="https://de7i3bh7bgh0d.cloudfront.net/2025/10/18/02/35/09/5617535f-627b-4b77-8279-e74835157a27/blogsplash_1200x630.png">
+{%else%}
+{%if err_msg%}
+<div class="alert alert-danger">{{err_msg}}</div>
+{%endif%}
+<form method="post" action="/admin-login">
+    <div class="mb-3">
+        <input type="text" class="form-control" id="username" name="username" placeholder="Email">
+    </div>
+    <div class="mb-3">
+        <div class="input-group">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+                   style="border-right: 0;">
+            <!--            <span class="input-group-text bg-white" style="border-left: 0; cursor: pointer;">-->
+            <!--                        <i class="fa-solid fa-eye-slash text-muted" id="togglePassword"></i>-->
+            <!--                    </span>-->
+        </div>
+    </div>
+    {%if err_msg%}
+    <div class="alert alert-danger">{{err_msg}}</div>
+    {%endif%}
+    <div class="text-end mb-3">
+        <a href="#" class="text-decoration-none" style="color: #3b82f6; font-size: 0.9rem;">Forgot
+            password?</a>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100 py-2 mb-3 fw-bold"
+            style="background-color: #0d6efd;">Login
+    </button>
+
+    <div class="text-center mb-3" style="font-size: 0.9rem;">
+        <span class="text-muted">Don't have an account?</span>
+        <a href="#" class="text-decoration-none" style="color: #3b82f6;">Signup</a>
+    </div>
+
+    <!--            <div class="divider">Or</div>-->
+
+    <!--            <button type="button" class="btn btn-primary w-100 mb-2 btn-social"-->
+    <!--                    style="background-color: #3b5998; border: none;">-->
+    <!--                <i class="fa-brands fa-facebook-f"></i> Login with Facebook-->
+    <!--            </button>-->
+
+    <!--            <button type="button" class="btn btn-light w-100 btn-social" style="border: 1px solid #ced4da;">-->
+    <!--                <i class="fa-brands fa-google text-danger"></i> Login with Google-->
+    <!--            </button>-->
+</form>
+{%endif%}
+{% endblock %}
